@@ -237,7 +237,7 @@
 <script>
 (function () {
   if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-  var MAX = 7;
+  var MAX = 18;
   var live = 0;
   function spawn() {
     if (live >= MAX) return;
@@ -257,8 +257,8 @@
     p.addEventListener('animationend', function () { p.remove(); live--; });
     document.body.appendChild(p);
   }
-  spawn();
-  setInterval(function () { if (Math.random() < 0.65) spawn(); }, 1800);
+  for (var i = 0; i < 5; i++) spawn();
+  setInterval(function () { if (Math.random() < 0.85) spawn(); }, 900);
 })();
 </script>
 
