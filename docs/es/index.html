@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>un-enshittifier 💩 — deflate LinkedIn posts back to reality</title>
-<meta name="description" content="A Claude Code plugin that strips LinkedIn thought-leadership down to what actually happened: a plain rewrite, a brutal one-liner, and a 💩 bullshit meter — grounded in real persuasion research.">
+<title>un-enshittifier 💩 — desinfla publicaciones de LinkedIn a la realidad</title>
+<meta name="description" content="Un plugin de Claude Code que reduce el liderazgo de opinión de LinkedIn a lo que realmente pasó: una reescritura simple, una frase brutal y un medidor de caca 💩 — con base en investigación real sobre persuasión.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💩</text></svg>">
 <link rel="alternate" hreflang="en" href="https://idlechara.github.io/deflate/">
 <link rel="alternate" hreflang="es" href="https://idlechara.github.io/deflate/es/">
@@ -149,7 +149,7 @@
   .lang-switch .active { background: var(--pink); color: #8c3a5e; font-weight: 700; }
   .lang-switch a:hover { color: var(--text); }
 
-  /* ambient rotating poops */
+  /* caquitas ambientales giratorias */
   .floater {
     position: fixed; z-index: 0; pointer-events: none; user-select: none;
     animation: floatspin linear forwards;
@@ -171,86 +171,86 @@
 </head>
 <body>
 
-<nav class="lang-switch" aria-label="Language">
-  <span class="active">EN</span>
-  <a href="es/" lang="es" hreflang="es">ES</a>
+<nav class="lang-switch" aria-label="Idioma">
+  <a href="../" lang="en" hreflang="en">EN</a>
+  <span class="active">ES</span>
 </nav>
 
 <header class="wrap">
-  <div class="badge">Claude Code plugin</div>
+  <div class="badge">Plugin para Claude Code</div>
   <h1>un&#8209;enshittifier <span class="poop">💩</span></h1>
-  <p class="tagline">Paste any LinkedIn thought-leadership post. Get back what <em>actually</em> happened — plus a bullshit meter, a brutal one-liner, and the manipulation tricks, named.</p>
+  <p class="tagline">Pega cualquier publicación de liderazgo de opinión de LinkedIn. Recibe lo que <em>realmente</em> pasó — más un medidor de caca, una frase brutalmente honesta y los trucos de manipulación, con nombre y apellido.</p>
   <div class="cta-row">
-    <a class="btn btn-primary" href="#install">Install in 2 commands</a>
+    <a class="btn btn-primary" href="#install">Instálalo en 2 comandos</a>
     <a class="btn btn-ghost" href="https://github.com/idlechara/deflate">GitHub →</a>
   </div>
 </header>
 
 <section class="wrap">
-  <h2>See it work</h2>
-  <p class="sub">A real specimen: a CEO announces a "4x productivity increase" over a giant graphic, with zero methodology, tagged "SERIES 2/6".</p>
+  <h2>Míralo en acción</h2>
+  <p class="sub">Un espécimen real: un CEO anuncia un "aumento de 4x en productividad" sobre un gráfico gigante, sin metodología, etiquetado "SERIE 2/6".</p>
   <div class="terminal">
     <div class="term-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="term-title">claude</span></div>
     <div class="term-body">
-      <p class="prompt"><span class="cmd">&gt; /un-enshittifier</span> [pasted post]</p>
-      <p class="meter">Shit-o-meter: 💩 90% <span class="gauge">[█████████░]</span></p>
-      <blockquote>We measured engineers going 4x faster with AI. I didn't explain how we measured it.</blockquote>
-      <p class="oneliner">"I have a big number, a giant graphic repeating it, and zero idea how I calculated it."</p>
-      <p class="tells-p">The tells: the entire post defends the number without ever saying how it was measured; a giant graphic with the hero number as a substitute for data; and "SERIES 2/6" — content-calendar farming, this is a franchise now.</p>
+      <p class="prompt"><span class="cmd">&gt; /un-enshittifier</span> [post pegado]</p>
+      <p class="meter">Medidor de caca: 💩 90% <span class="gauge">[█████████░]</span></p>
+      <blockquote>Medimos que los ingenieros van 4x más rápido con IA. No expliqué cómo lo medimos.</blockquote>
+      <p class="oneliner">"Tengo un número grande, un gráfico gigante que lo repite, y cero idea de cómo lo calculé."</p>
+      <p class="tells-p">Las señales: todo el post defiende el número sin decir nunca cómo se midió; un gráfico gigante con el numerote como sustituto de datos; y "SERIE 2/6" — cosecha de calendario de contenidos, esto ya es una franquicia.</p>
     </div>
   </div>
 </section>
 
 <section class="wrap" id="install">
-  <h2>Install</h2>
-  <p class="sub">Works anywhere Claude Code runs. Output always matches the post's language — Spanish in, Spanish out.</p>
+  <h2>Instalación</h2>
+  <p class="sub">Funciona donde corra Claude Code. La salida siempre está en el idioma del post — entra español, sale español.</p>
   <div class="steps">
     <div class="step">
-      <h3>Get Claude Code</h3>
-      <p>If you don't have it yet: <code>npm install -g @anthropic-ai/claude-code</code>, then run <code>claude</code> and log in.</p>
+      <h3>Consigue Claude Code</h3>
+      <p>Si aún no lo tienes: <code>npm install -g @anthropic-ai/claude-code</code>, luego ejecuta <code>claude</code> e inicia sesión.</p>
     </div>
     <div class="step">
-      <h3>Add the marketplace &amp; install</h3>
-      <p>Inside any Claude Code session:</p>
+      <h3>Agrega el marketplace e instala</h3>
+      <p>Dentro de cualquier sesión de Claude Code:</p>
       <pre class="block">/plugin marketplace add idlechara/deflate
 /plugin install un-enshittifier@deflate</pre>
     </div>
     <div class="step">
-      <h3>Deflate</h3>
-      <p>Paste a post as text — or drop in a screenshot:</p>
-      <pre class="block">/un-enshittifier &lt;the post&gt;</pre>
+      <h3>Desinfla</h3>
+      <p>Pega un post como texto — o suelta una captura de pantalla:</p>
+      <pre class="block">/un-enshittifier &lt;el post&gt;</pre>
     </div>
   </div>
 </section>
 
 <section class="wrap">
-  <h2>The tells it catches</h2>
-  <p class="sub">Every "tell" maps to a documented persuasion technique — not an invention.</p>
+  <h2>Las señales que detecta</h2>
+  <p class="sub">Cada "señal" corresponde a una técnica de persuasión documentada — no es un invento.</p>
   <div class="grid">
-    <div class="card"><h3>Borrowed authority</h3><p>"When I was at Google…" — a logo doing the arguing.</p><span class="mech">appeal to authority · Cialdini</span></div>
-    <div class="card"><h3>Fake paradox</h3><p>An obvious consequence dressed as a mind-bending contradiction.</p><span class="mech">curiosity gap · pseudo-profundity</span></div>
-    <div class="card"><h3>Personal-epiphany arc</h3><p>A mundane decision told as a hero's journey.</p><span class="mech">narrative transportation · Green &amp; Brock</span></div>
-    <div class="card"><h3>Bumper-sticker lesson</h3><p>The post exists to deliver a fortune cookie.</p><span class="mech">processing fluency · unfalsifiability</span></div>
-    <div class="card"><h3>Comment-farming question</h3><p>"Agree? 👇" — a lever on the ranking algorithm, not a question.</p><span class="mech">engagement bait · defined by Meta, 2017</span></div>
-    <div class="card"><h3>Buzzword bolted on</h3><p>"AI" sprinkled on content that would be identical without it.</p><span class="mech">trend-hijacking · status display</span></div>
-    <div class="card"><h3>Cadence-theater</h3><p>Every. Line. Its. Own. Paragraph.</p><span class="mech">fluency-as-truth · the "see more" fold</span></div>
-    <div class="card"><h3>Giant hero number</h3><p>A huge "4x" with no baseline, denominator, or method.</p><span class="mech">anchoring · Tversky &amp; Kahneman</span></div>
-    <div class="card"><h3>Preemptive defense</h3><p>"This isn't about layoffs" — so it's about layoffs.</p><span class="mech">apophasis · classical rhetoric</span></div>
+    <div class="card"><h3>Autoridad prestada</h3><p>"Cuando estaba en Google…" — un logo argumentando por ti.</p><span class="mech">apelación a la autoridad · Cialdini</span></div>
+    <div class="card"><h3>Paradoja falsa</h3><p>Una consecuencia obvia disfrazada de contradicción alucinante.</p><span class="mech">brecha de curiosidad · pseudoprofundidad</span></div>
+    <div class="card"><h3>Arco de epifanía personal</h3><p>Una decisión mundana contada como viaje del héroe.</p><span class="mech">transporte narrativo · Green &amp; Brock</span></div>
+    <div class="card"><h3>Moraleja de calcomanía</h3><p>El post existe para entregar una galleta de la fortuna.</p><span class="mech">fluidez de procesamiento · infalsabilidad</span></div>
+    <div class="card"><h3>Pregunta cosecha-comentarios</h3><p>"¿Están de acuerdo? 👇" — una palanca sobre el algoritmo, no una pregunta.</p><span class="mech">engagement bait · definido por Meta, 2017</span></div>
+    <div class="card"><h3>Buzzword atornillado</h3><p>"IA" espolvoreada sobre contenido que sería idéntico sin ella.</p><span class="mech">secuestro de tendencias · señal de estatus</span></div>
+    <div class="card"><h3>Teatro de cadencia</h3><p>Cada. Línea. Su. Propio. Párrafo.</p><span class="mech">fluidez-como-verdad · el pliegue de "ver más"</span></div>
+    <div class="card"><h3>Numerote heroico</h3><p>Un "4x" enorme sin línea base, denominador ni método.</p><span class="mech">anclaje · Tversky &amp; Kahneman</span></div>
+    <div class="card"><h3>Defensa preventiva</h3><p>"Esto no se trata de despidos" — o sea, se trata de despidos.</p><span class="mech">apófasis · retórica clásica</span></div>
   </div>
 </section>
 
 <section class="wrap">
-  <h2>The serious part</h2>
+  <h2>La parte seria</h2>
   <div class="serious">
-    <p><strong>The humor comes strictly from deflation, never invention</strong> — the skill only mocks what is literally on the page, and never adds facts, motives, or events the post doesn't state.</p>
-    <p>The framing owes everything to Harry Frankfurt's <em>On Bullshit</em>: these posts usually aren't lies — they're <strong>indifferent to truth</strong>, with every word optimized for engagement instead of accuracy. That's what makes them deflatable: there's always a smaller, truer sentence underneath.</p>
-    <p>Each tell is grounded in real research — Cialdini's authority principle, pseudo-profound bullshit (Pennycook et&nbsp;al., 2015), narrative transportation (Green &amp; Brock, 2000), rhyme-as-reason, anchoring (Tversky &amp; Kahneman, 1974), and Meta's own engagement-bait policy. The full sourced catalog, with a practical "how to spot it" test for each, ships inside the plugin: <a href="https://github.com/idlechara/deflate/blob/main/skills/un-enshittifier/references/catalog.md">references/catalog.md</a>. Ask the skill <em>why</em> a tell works and it answers from there — sources cited, roast off.</p>
+    <p><strong>El humor viene estrictamente de desinflar, nunca de inventar</strong> — el skill solo se burla de lo que está literalmente en la página, y jamás agrega hechos, motivos o eventos que el post no declara.</p>
+    <p>El marco conceptual le debe todo a <em>On Bullshit</em> de Harry Frankfurt: estos posts normalmente no son mentiras — son <strong>indiferentes a la verdad</strong>, con cada palabra optimizada para el engagement en vez de la exactitud. Eso es lo que los hace desinflables: siempre hay una oración más pequeña y más verdadera debajo.</p>
+    <p>Cada señal tiene base en investigación real — el principio de autoridad de Cialdini, el bullshit pseudoprofundo (Pennycook et&nbsp;al., 2015), el transporte narrativo (Green &amp; Brock, 2000), la rima-como-razón, el anclaje (Tversky &amp; Kahneman, 1974) y la propia política de engagement bait de Meta. El catálogo completo con fuentes, y una prueba práctica de "cómo detectarla" para cada señal, viene dentro del plugin: <a href="https://github.com/idlechara/deflate/blob/main/skills/un-enshittifier/references/catalog.md">references/catalog.md</a>. Pregúntale al skill <em>por qué</em> funciona una señal y responde desde ahí — con fuentes citadas y sin tono de burla.</p>
   </div>
 </section>
 
 <footer>
   <div class="wrap">
-    MIT licensed · built by <a href="https://github.com/idlechara">idlechara</a> · deflated with 💩<br>
+    Licencia MIT · hecho por <a href="https://github.com/idlechara">idlechara</a> · desinflado con 💩<br>
     <em>El confort no es estabilidad. Es una publicación de LinkedIn.</em>
   </div>
 </footer>
@@ -266,7 +266,7 @@
     var p = document.createElement('span');
     p.className = 'floater';
     p.textContent = '💩';
-    var dur = 7 + Math.random() * 9;                       // 7–16s on screen
+    var dur = 7 + Math.random() * 9;
     p.style.left = (Math.random() * 96) + 'vw';
     p.style.top = (10 + Math.random() * 80) + 'vh';
     p.style.fontSize = (16 + Math.random() * 34) + 'px';
