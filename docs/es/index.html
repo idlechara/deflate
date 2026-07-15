@@ -45,7 +45,7 @@
     border: 1px solid var(--lav); border-radius: 999px;
     padding: 4px 14px; margin-bottom: 24px;
   }
-  h1 { font-size: clamp(40px, 7vw, 64px); letter-spacing: -0.02em; line-height: 1.05; color: #3f3149; margin-top: 12px; }
+  h1 { font-size: clamp(32px, 10vw, 64px); letter-spacing: -0.02em; line-height: 1.05; color: #3f3149; margin-top: 12px; }
   h1 .poop { display: inline-block; transform: translateY(4px); }
   .tagline { margin-top: 18px; font-size: clamp(17px, 2.4vw, 21px); color: var(--muted); max-width: 620px; margin-left: auto; margin-right: auto; }
   .cta-row { margin-top: 34px; display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
@@ -90,6 +90,7 @@
   .step {
     background: var(--panel); border: 1px solid var(--border); border-radius: 14px;
     padding: 18px 20px 18px 66px; position: relative; box-shadow: 0 6px 20px #f7c8d833;
+    min-width: 0;
   }
   .step::before {
     counter-increment: step; content: counter(step);
@@ -104,7 +105,7 @@
   .step code, .inline-code {
     font-family: var(--mono); font-size: 13.5px;
     background: var(--panel-2); border: 1px solid var(--border); border-radius: 6px;
-    padding: 2px 8px; color: var(--lav-deep); white-space: nowrap;
+    padding: 2px 8px; color: var(--lav-deep); overflow-wrap: anywhere;
   }
   pre.block {
     font-family: var(--mono); font-size: 14px; color: var(--accent-deep);
@@ -117,6 +118,7 @@
     background: var(--panel); border: 1px solid var(--border); border-radius: 14px; padding: 18px 20px;
     box-shadow: 0 6px 20px #cdbcf026;
     transition: transform .15s ease;
+    min-width: 0;
   }
   .card:hover { transform: translateY(-3px) rotate(-0.5deg); }
   .card:nth-child(3n+1) { border-top: 4px solid var(--pink); }
@@ -167,8 +169,17 @@
   @media (prefers-reduced-motion: reduce) { .floater { display: none; } }
 
   @media (max-width: 560px) {
-    header { padding: 72px 0 44px; }
+    header { padding: 84px 0 44px; }
+    section { padding: 40px 0; }
+    .wrap { padding: 0 18px; }
+    .cta-row { flex-direction: column; align-items: stretch; gap: 10px; }
+    .btn { text-align: center; }
     .term-body { padding: 16px; font-size: 14px; }
+    .step { padding: 16px 16px 16px 58px; }
+    .step::before { left: 15px; top: 15px; width: 28px; height: 28px; }
+    .grid { grid-template-columns: 1fr; }
+    .serious { padding: 22px 18px; }
+    .lang-switch { top: 12px; right: 12px; }
   }
 </style>
 </head>
@@ -282,7 +293,8 @@
 })();
 (function () {
   if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-  var MAX = 18;
+  var small = matchMedia('(max-width: 560px)').matches;
+  var MAX = small ? 8 : 18;
   var live = 0;
   function spawn() {
     if (live >= MAX) return;
@@ -293,7 +305,7 @@
     var dur = 7 + Math.random() * 9;
     p.style.left = (Math.random() * 96) + 'vw';
     p.style.top = (10 + Math.random() * 80) + 'vh';
-    p.style.fontSize = (16 + Math.random() * 34) + 'px';
+    p.style.fontSize = (16 + Math.random() * (small ? 18 : 34)) + 'px';
     p.style.animationDuration = dur + 's';
     p.style.setProperty('--s', (0.8 + Math.random() * 0.6).toFixed(2));
     p.style.setProperty('--o', (0.25 + Math.random() * 0.35).toFixed(2));
