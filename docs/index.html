@@ -35,14 +35,14 @@
   }
   .wrap { max-width: 880px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 1; }
 
-  header { padding: 88px 0 48px; text-align: center; }
+  header { padding: 120px 0 64px; text-align: center; }
   .badge {
     display: inline-block; font-family: var(--mono); font-size: 13px;
     color: var(--lav-deep); background: #efe8fb;
     border: 1px solid var(--lav); border-radius: 999px;
     padding: 4px 14px; margin-bottom: 24px;
   }
-  h1 { font-size: clamp(40px, 7vw, 64px); letter-spacing: -0.02em; line-height: 1.05; color: #3f3149; }
+  h1 { font-size: clamp(40px, 7vw, 64px); letter-spacing: -0.02em; line-height: 1.05; color: #3f3149; margin-top: 12px; }
   h1 .poop { display: inline-block; transform: translateY(4px); }
   .tagline { margin-top: 18px; font-size: clamp(17px, 2.4vw, 21px); color: var(--muted); max-width: 620px; margin-left: auto; margin-right: auto; }
   .cta-row { margin-top: 34px; display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
@@ -55,9 +55,9 @@
   .btn-primary { background: var(--accent); color: #1e3f31; box-shadow: 0 6px 18px #7ec8a955; }
   .btn-ghost { border: 1px solid var(--border); color: var(--text); background: var(--panel); box-shadow: 0 4px 14px #cdbcf033; }
 
-  section { padding: 44px 0; }
-  h2 { font-size: 26px; margin-bottom: 8px; letter-spacing: -0.01em; color: #3f3149; }
-  .sub { color: var(--muted); margin-bottom: 26px; }
+  section { padding: 56px 0; }
+  h2 { font-size: 26px; margin: 16px 0 10px; letter-spacing: -0.01em; color: #3f3149; }
+  .sub { color: var(--muted); margin-bottom: 30px; }
 
   .terminal {
     background: var(--panel); border: 1px solid var(--border); border-radius: 16px;
@@ -148,7 +148,7 @@
   @media (prefers-reduced-motion: reduce) { .floater { display: none; } }
 
   @media (max-width: 560px) {
-    header { padding: 56px 0 36px; }
+    header { padding: 72px 0 44px; }
     .term-body { padding: 16px; font-size: 14px; }
   }
 </style>
