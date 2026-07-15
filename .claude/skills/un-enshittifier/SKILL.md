@@ -1,9 +1,9 @@
 ---
-name: de-enshittifier
+name: un-enshittifier
 description: Strips LinkedIn and corporate thought-leadership posts down to what actually happened, deflating jargon and engagement bait into a short honest rewrite plus a funny one-liner. Use when the user pastes or describes a LinkedIn post, corporate announcement, or "thought leadership" text and wants it de-bloated, roasted, or translated to plain language.
 ---
 
-# De-enshittifier
+# Un-enshittifier
 
 ## What this does
 
@@ -33,15 +33,17 @@ Takes a LinkedIn post, corporate announcement, or thought-leadership text and de
 
 ## Catalog of common tells (reference for step 4)
 
-- **Borrowed authority** — name-dropping big companies (Google, Amazon, McKinsey) so you can't argue.
-- **Fake paradox** — "una paradoja que no vi venir"; framing an obvious consequence as a mind-bending contradiction.
-- **Personal-epiphany arc** — a mundane decision reframed as a revelation ("and that's when I realized…").
-- **Bumper-sticker lesson** — "la lección: …"; the post exists to deliver a fortune cookie.
-- **Comment-farming question** — an open question bolted to the end to juice engagement ("¿A ustedes les ha pasado?").
-- **Buzzword bolted on for relevance** — AI, transformation, agile, sprinkled on unrelated content.
-- **One-sentence-per-paragraph cadence-theater** — line breaks doing the work the ideas can't.
-- **Giant hero-number graphic** — a big "4x" in place of actual data or methodology.
-- **Preemptive defense** — "aquí no se trata de X" / "this isn't about layoffs" — the tell that X is exactly the fear.
+These are not inventions — each maps to a documented persuasion technique. The full grounded version, with the psychological mechanism and the research behind each tell, lives in [references/catalog.md](references/catalog.md). **Read that file and answer from it whenever the user asks why a tell works, whether this is "real", or wants to learn/teach the underlying techniques** — cite the actual sources, drop the roasting tone, keep it factual.
+
+- **Borrowed authority** — name-dropping big companies (Google, Amazon, McKinsey) so you can't argue. (Appeal to authority; Cialdini's authority principle.)
+- **Fake paradox** — "una paradoja que no vi venir"; framing an obvious consequence as a mind-bending contradiction. (Manufactured curiosity gap; pseudo-profundity.)
+- **Personal-epiphany arc** — a mundane decision reframed as a revelation ("and that's when I realized…"). (Narrative transportation: stories suppress counterarguing.)
+- **Bumper-sticker lesson** — "la lección: …"; the post exists to deliver a fortune cookie. (Processing fluency; unfalsifiable = information-free.)
+- **Comment-farming question** — an open question bolted to the end to juice engagement ("¿A ustedes les ha pasado?"). (Engagement bait — formally defined and demoted by Meta since 2017.)
+- **Buzzword bolted on for relevance** — AI, transformation, agile, sprinkled on unrelated content. (Trend-hijacking; jargon as status display.)
+- **One-sentence-per-paragraph cadence-theater** — line breaks doing the work the ideas can't. (Fluency-as-truth, plus gaming the "see more" fold.)
+- **Giant hero-number graphic** — a big "4x" in place of actual data or methodology. (Anchoring; denominator-free statistics.)
+- **Preemptive defense** — "aquí no se trata de X" / "this isn't about layoffs" — the tell that X is exactly the fear. (Apophasis: denying a frame plants it.)
 
 ## Examples
 
