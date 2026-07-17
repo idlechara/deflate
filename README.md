@@ -1,4 +1,4 @@
-# balloon 💩
+# bullshit 💩
 
 **A Claude Code plugin that un-enshittifies LinkedIn posts.**
 
@@ -23,14 +23,14 @@ Feed it a (fully invented) post where a founder announces "redujimos el tiempo d
 In Claude Code:
 
 ```
-/plugin marketplace add idlechara/balloon
-/plugin install balloon@balloon
+/plugin marketplace add idlechara/bullshit
+/plugin install bullshit@bullshit
 ```
 
 ## Use
 
 ```
-/balloon:deflate <paste the post>
+/bullshit:deflate <paste the post>
 ```
 
 Screenshots work too — paste an image of the post.
@@ -38,10 +38,10 @@ Screenshots work too — paste an image of the post.
 Or run it in reverse:
 
 ```
-/balloon:inflate <a plain, boring fact>
+/bullshit:inflate <a plain, boring fact>
 ```
 
-**Inflate** takes a fact and inflates it into full thought-leadership glory — epiphany arc, fake paradox, fortune-cookie lesson, comment-farming question — using the exact same catalog of tells as a recipe instead of a detector. It never invents facts: every gram of added weight is content-free drama, which is the joke. Ask for a bloat level ("mild", "90%", "maximum slop"); default is 75%. The output should survive a round-trip through /balloon:deflate and come back as exactly your fact.
+**Inflate** takes a fact and inflates it into full thought-leadership glory — epiphany arc, fake paradox, fortune-cookie lesson, comment-farming question — using the exact same catalog of tells as a recipe instead of a detector. It never invents facts: every gram of added weight is content-free drama, which is the joke. Ask for a bloat level ("mild", "90%", "maximum slop"); default is 75%. The output should survive a round-trip through /bullshit:deflate and come back as exactly your fact.
 
 ## What you get
 

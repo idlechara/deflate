@@ -1,5 +1,5 @@
 {
-  "name": "balloon",
+  "name": "bullshit",
   "description": "Home of deflate & inflate: satire-grade LinkedIn deflation (and inflation), backed by real persuasion research.",
   "owner": {
     "name": "idlechara",
@@ -7,9 +7,9 @@
   },
   "plugins": [
     {
-      "name": "balloon",
+      "name": "bullshit",
       "source": "./",
-      "description": "Deflates LinkedIn and corporate thought-leadership posts back to what actually happened — and inflates plain facts back into the genre with /balloon:inflate. A plain rewrite, a brutal one-liner, a 💩 bullshit meter, and the manipulation tells — each grounded in real persuasion research."
+      "description": "Deflates LinkedIn and corporate thought-leadership posts back to what actually happened — and inflates plain facts back into the genre with /bullshit:inflate. A plain rewrite, a brutal one-liner, a 💩 bullshit meter, and the manipulation tells — each grounded in real persuasion research."
     }
   ]
 }

@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>balloon 💩 — LinkedIn posts, back to reality</title>
+<title>deflate &amp; inflate 💩 — LinkedIn posts, back to reality</title>
 <meta name="description" content="A Claude Code plugin that strips LinkedIn thought-leadership down to what actually happened: a plain rewrite, a brutal one-liner, and a 💩 bullshit meter — grounded in real persuasion research.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💩</text></svg>">
-<link rel="alternate" hreflang="en" href="https://balloon.idlechara.net/">
-<link rel="alternate" hreflang="es" href="https://balloon.idlechara.net/es/">
-<link rel="alternate" hreflang="x-default" href="https://balloon.idlechara.net/">
+<link rel="alternate" hreflang="en" href="https://bullshit.idlechara.net/">
+<link rel="alternate" hreflang="es" href="https://bullshit.idlechara.net/es/">
+<link rel="alternate" hreflang="x-default" href="https://bullshit.idlechara.net/">
 <script>
 (function () {
   try {
@@ -210,12 +210,12 @@
 
 <header class="wrap">
   <div class="badge">Claude Code plugin</div>
-  <h1>balloon <span class="poop">💩</span></h1>
+  <h1>deflate &amp; inflate <span class="poop">💩</span></h1>
   <p class="tagline">Paste any LinkedIn thought-leadership post. Get back what <em>actually</em> happened — plus a bullshit meter, a brutal one-liner, and the manipulation tricks, named.</p>
   <div class="cta-row">
     <a class="btn btn-primary" href="#install">Install in 2 commands</a>
     <a class="btn btn-lav" id="try-claude" href="https://claude.ai/new" target="_blank" rel="noopener">Try it in Claude ✨</a>
-    <a class="btn btn-ghost" href="https://github.com/idlechara/balloon">GitHub →</a>
+    <a class="btn btn-ghost" href="https://github.com/idlechara/bullshit">GitHub →</a>
     <a class="btn btn-evil" href="inflate/">Feeling a little evil? 😈</a>
   </div>
 </header>
@@ -226,7 +226,7 @@
   <div class="terminal">
     <div class="term-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="term-title">claude</span></div>
     <div class="term-body">
-      <p class="prompt"><span class="cmd">&gt; /balloon:deflate</span> [pasted post]</p>
+      <p class="prompt"><span class="cmd">&gt; /bullshit:deflate</span> [pasted post]</p>
       <p class="meter">Shit-o-meter: 💩 90% <span class="gauge">[█████████░]</span></p>
       <blockquote>We say our onboarding is 10x faster. I didn't explain compared to what, or how we measured it.</blockquote>
       <p class="oneliner">"I have a big number, a giant graphic repeating it, and zero idea how I calculated it."</p>
@@ -246,13 +246,13 @@
     <div class="step">
       <h3>Add the marketplace &amp; install</h3>
       <p>Inside any Claude Code session:</p>
-      <pre class="block">/plugin marketplace add idlechara/balloon
-/plugin install balloon@balloon</pre>
+      <pre class="block">/plugin marketplace add idlechara/bullshit
+/plugin install bullshit@bullshit</pre>
     </div>
     <div class="step">
       <h3>Deflate</h3>
       <p>Paste a post as text — or drop in a screenshot:</p>
-      <pre class="block">/balloon:deflate &lt;the post&gt;</pre>
+      <pre class="block">/bullshit:deflate &lt;the post&gt;</pre>
     </div>
   </div>
 </section>
@@ -301,7 +301,7 @@
       <li><a href="https://doi.org/10.1126/science.185.4157.1124">Tversky &amp; Kahneman — "Judgment under uncertainty" (1974)</a></li>
       <li><a href="https://about.fb.com/news/2017/12/news-feed-fyi-fighting-engagement-bait-on-facebook/">Meta — "Fighting Engagement Bait on Facebook" (2017)</a></li>
     </ul>
-    <p>The full catalog, with the mechanism and a practical "how to spot it" test for each tell, ships inside the plugin: <a href="https://github.com/idlechara/balloon/blob/main/skills/deflate/references/catalog.md">references/catalog.md</a>. Ask the skill <em>why</em> a tell works and it answers from there — sources cited, roast off.</p>
+    <p>The full catalog, with the mechanism and a practical "how to spot it" test for each tell, ships inside the plugin: <a href="https://github.com/idlechara/bullshit/blob/main/skills/deflate/references/catalog.md">references/catalog.md</a>. Ask the skill <em>why</em> a tell works and it answers from there — sources cited, roast off.</p>
   </div>
 </section>
 
@@ -315,7 +315,7 @@
 <script>
 (function () {
   var PROMPT = [
-    'Fetch https://raw.githubusercontent.com/idlechara/balloon/main/skills/deflate/SKILL.md and follow those instructions exactly (they define the output format and hard rules). Apply them to the LinkedIn post I paste below. If you cannot read the URL, tell me and I will paste the instructions instead.',
+    'Fetch https://raw.githubusercontent.com/idlechara/bullshit/main/skills/deflate/SKILL.md and follow those instructions exactly (they define the output format and hard rules). Apply them to the LinkedIn post I paste below. If you cannot read the URL, tell me and I will paste the instructions instead.',
     '',
     'Here is the post:',
     ''
