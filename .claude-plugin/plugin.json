@@ -1,13 +1,13 @@
 {
-  "name": "deflate",
-  "description": "Deflates LinkedIn and corporate thought-leadership posts back to what actually happened — and, with /inflate, inflates plain facts back into the genre. Plain rewrite, brutal one-liner, 💩 bullshit meter, and manipulation tells, each grounded in real persuasion research.",
+  "name": "balloon",
+  "description": "Deflates LinkedIn and corporate thought-leadership posts back to what actually happened — and, with /balloon:inflate, inflates plain facts back into the genre. Plain rewrite, brutal one-liner, 💩 bullshit meter, and manipulation tells, each grounded in real persuasion research.",
   "version": "1.1.0",
   "author": {
     "name": "idlechara",
     "email": "3944601+idlechara@users.noreply.github.com"
   },
-  "homepage": "https://github.com/idlechara/deflate",
-  "repository": "https://github.com/idlechara/deflate",
+  "homepage": "https://github.com/idlechara/balloon",
+  "repository": "https://github.com/idlechara/balloon",
   "license": "MIT",
   "keywords": [
     "linkedin",
